@@ -1,0 +1,154 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ff6f61;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ff9472;
+}
+
+/* Hero Section */
+header.hero {
+  background: linear-gradient(to right, #ff6f61, #ff9472);
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  /* background: linear-gradient(to right, #e0e0e0, #f9f9f9);
+  color: #333; */
+}
+
+header.hero p {
+  max-width: 600px;
+}
+
+/* Call to Action Button */
+.cta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: white;
+  color: #ff6f61;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta:hover {
+  background: #ff9472;
+  color: white;
+}
+
+/* Section Styling */
+section {
+  padding: 2rem 1rem;
+  max-width: 960px;
+  margin: auto;
+}
+
+h2 {
+   color: #ff6f61;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.grid div {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Testimonials */
+blockquote {
+  background: #fff3f0;
+  border-left: 5px solid #ff6f61;
+  margin: 1rem 0;
+  padding: 1rem;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+footer a {
+  color: #ff9472;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+footer a:hover {
+  color: #ff6f61;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  header.hero h1 {
+    font-size: 2rem;
+  }
+
+  .cta {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
